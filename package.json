@@ -1,6 +1,6 @@
 {
   "name": "@mckalexee/lambda-handlers",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Helper for creating Lambda Handlers",
   "main": "index.js",
   "engines": {
