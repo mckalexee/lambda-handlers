@@ -6,7 +6,7 @@ interface User {
 	email: string;
 }
 
-export default ApiHandler(
+export const handler = ApiHandler(
 	{
 		method: 'GET',
 		route: '/users/{userId}',

@@ -13,7 +13,7 @@ export function parseHandlers(path: string) {
 
 	for (const file of files) {
 		try {
-			const handler = require(file.replace(/\.ts$/g, '')).default;
+			const handler = require(file.replace(/\.ts$/g, '')).handler;
 			switch (handler.type) {
 				case HandlerTypes.API:
 					handlers.api[file] = handler.definition;
