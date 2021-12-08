@@ -1,13 +1,13 @@
 import type { APIGatewayProxyStructuredResultV2 } from 'aws-lambda';
 
-export interface SuccessResponseOptions {
+export interface FailedResponseOptions {
 	statusCode?: number;
 	headers?: Record<string, boolean | number | string>;
 }
 
 export function FailedResponse<T = unknown>(
 	body: T,
-	{ headers = {}, statusCode = 500 }: SuccessResponseOptions = {},
+	{ headers = {}, statusCode = 500 }: FailedResponseOptions = {},
 ): APIGatewayProxyStructuredResultV2 {
 	const responseHeaders: Record<string, boolean | number | string> = {
 		'Content-Type': 'application/json',

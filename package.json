@@ -13,7 +13,10 @@
     "index.d.ts"
   ],
   "scripts": {
-    "test": "jest --runInBand"
+    "test": "jest --runInBand",
+    "build:clean": "tsc -b --clean",
+    "build": "tsc -b --clean && tsc -b",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
