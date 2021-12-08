@@ -107,6 +107,8 @@ package-lock.json
 
 lib/**/*.js
 lib/**/*.d.ts
+test-handlers/**/*.js
+test-handlers/**/*.d.ts
 index.js
 index.d.ts
 

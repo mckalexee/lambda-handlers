@@ -3,7 +3,7 @@ import * as path from 'path';
 import { ApiHandlerDefinition } from './api-handler';
 import { HandlerTypes } from './handler-types';
 
-export async function parseHandlers(path: string) {
+export function parseHandlers(path: string) {
 	const files = getAllFiles(path);
 	const handlers: {
 		api: Record<string, ApiHandlerDefinition>;

@@ -59,7 +59,7 @@ export type ApiHandlerWithDefinition = APIGatewayProxyHandlerV2 & {
 };
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-function defaultValidator<T>(input: any): T {
+function defaultValidator<T>(): T {
 	return undefined as unknown as T;
 }
 
