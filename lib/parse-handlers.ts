@@ -27,7 +27,6 @@ export function parseHandlers(path: string) {
 		}
 	}
 
-	console.log(handlers);
 	return handlers;
 }
 
